@@ -29,10 +29,12 @@ makeCacheMatrix <- function(x = matrix()) {
     i
   }
   
+  list(set = set, get = get, setInverse = setInverse, getInverse = getInverse)
+  
 }
 
 
-## Calculateinverse of the matrix returned by function 1. 
+## Calculate inverse of the matrix returned by function 1. 
 ## If inverse is already calculated, then function should retrieve the inverse from cache.
 
 cacheSolve <- function(x, ...) {
